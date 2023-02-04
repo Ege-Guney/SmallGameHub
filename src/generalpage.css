@@ -1,0 +1,44 @@
+header {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: left;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+.all_links {
+  position: relative;
+  height: 100%;
+}
+
+.one_link {
+  color: #2da1c1;
+  font-size: small;
+  justify-content: center;
+  text-decoration: none;
+  right: 0;
+  padding: 1.3em;
+  background-color: aliceblue;
+  border-radius: 15px;
+  border: 3px black solid;
+}
+
+.one_link:hover {
+  color: #f90;
+  text-decoration: underline;
+}

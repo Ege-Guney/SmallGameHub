@@ -1,11 +1,11 @@
 import React from "react";
-import TicTacToe from "./TicTacToe";
+import GeneralPage from "./GeneralPage";
 import "./app.css";
 
 function App() {
   return (
     <div className="app">
-      <TicTacToe />
+      <GeneralPage />
     </div>
   );
 }
