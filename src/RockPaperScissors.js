@@ -49,7 +49,7 @@ const RockPaperScissors = () => {
           onClick={() => handleClick("scissors")}
         ></button>
       </div>
-      <div>
+      <div class="result">
         <p>Your choice: {playerChoice}</p>
         <p>Computer choice: {computerChoice}</p>
         <p>{result}</p>
