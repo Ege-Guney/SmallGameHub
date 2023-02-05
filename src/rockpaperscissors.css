@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.choice_img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.choice {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 10px;
+}
+
+#rock {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/640px-Dwayne_Johnson_2014_%28cropped%29.jpg");
+  background-size: cover;
+}
+#paper {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MYMOObEFm0VL8KOsONlQnc4hj4cN-c7Isgh_5Lgb&s");
+  background-size: cover;
+}
+#scissors {
+  background-image: url("https://st.depositphotos.com/1024768/2970/v/600/depositphotos_29709915-stock-illustration-scissors-clip-art-cartoon-illustration.jpg");
+  background-size: cover;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+}
