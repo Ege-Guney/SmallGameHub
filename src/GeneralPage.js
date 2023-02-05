@@ -2,6 +2,7 @@ import React from "react";
 import "./generalpage.css";
 import TicTacToe from "./TicTacToe";
 import { Route, BrowserRouter as Router, Link, Routes } from "react-router-dom";
+import RockPaperScissors from "./RockPaperScissors";
 
 const GeneralPage = () => {
   return (
@@ -17,14 +18,19 @@ const GeneralPage = () => {
             </Link>
           </li>
           <li>
-            <Link class="one_link" to="/othergame">
-              Other Game
+            <Link class="one_link" to="/rockpaperscissors">
+              Rock Paper Scissors
             </Link>
           </li>
         </ul>
       </nav>
       <Routes>
         <Route exact path="/tictactoe" element={<TicTacToe />}></Route>
+        <Route
+          exact
+          path="/rockpaperscissors"
+          element={<RockPaperScissors />}
+        ></Route>
       </Routes>
     </Router>
   );
