@@ -3,6 +3,7 @@ import "./generalpage.css";
 import TicTacToe from "./TicTacToe";
 import { Route, BrowserRouter as Router, Link, Routes } from "react-router-dom";
 import RockPaperScissors from "./RockPaperScissors";
+import Hangman from "./Hangman";
 
 const GeneralPage = () => {
   return (
@@ -22,6 +23,11 @@ const GeneralPage = () => {
               Rock Paper Scissors
             </Link>
           </li>
+          <li>
+            <Link class="one_link" to="/hangman">
+              Hangman
+            </Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -31,6 +37,7 @@ const GeneralPage = () => {
           path="/rockpaperscissors"
           element={<RockPaperScissors />}
         ></Route>
+        <Route exact path="/hangman" element={<Hangman />}></Route>
       </Routes>
     </Router>
   );
