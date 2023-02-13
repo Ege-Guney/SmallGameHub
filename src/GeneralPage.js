@@ -4,6 +4,7 @@ import TicTacToe from "./TicTacToe";
 import { Route, BrowserRouter as Router, Link, Routes } from "react-router-dom";
 import RockPaperScissors from "./RockPaperScissors";
 import Hangman from "./Hangman";
+import ConnectFour from "./ConnectFour";
 
 const GeneralPage = () => {
   return (
@@ -28,6 +29,11 @@ const GeneralPage = () => {
               Hangman
             </Link>
           </li>
+          <li>
+            <Link class="one_link" to="/connectfour">
+              ConnectFour
+            </Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -38,6 +44,7 @@ const GeneralPage = () => {
           element={<RockPaperScissors />}
         ></Route>
         <Route exact path="/hangman" element={<Hangman />}></Route>
+        <Route exact path="/connectfour" element={<ConnectFour />}></Route>
       </Routes>
     </Router>
   );

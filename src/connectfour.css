@@ -1,0 +1,91 @@
+.connect-four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+  text-align: center;
+  transition: all 0.3s;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+}
+
+.turn {
+  font-weight: bold;
+  color: #333;
+}
+
+.winner {
+  font-weight: bold;
+  color: green;
+}
+
+td.red {
+  background-color: #ff5151;
+}
+
+td.yellow {
+  background-color: #ffff51;
+}
+td:last-child:hover {
+  background-color: lightgray;
+}
+.red-donut {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 5px;
+
+  border: 10px solid red;
+
+  top: 50%;
+  left: 50%;
+
+  display: inline-block;
+}
+
+.yellow-donut {
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 10px solid gold;
+  display: inline-block;
+
+  top: 50%;
+  left: 50%;
+}
+th {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.board {
+  background-color: #fff;
+  border: 10px solid #000;
+}
+
+.even-column:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.odd-column:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
