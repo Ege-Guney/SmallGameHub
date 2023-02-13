@@ -40,7 +40,7 @@ td.red {
 td.yellow {
   background-color: #ffff51;
 }
-td:last-child:hover {
+td:hover {
   background-color: lightgray;
 }
 .red-donut {
@@ -80,12 +80,4 @@ th {
 .board {
   background-color: #fff;
   border: 10px solid #000;
-}
-
-.even-column:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.odd-column:hover {
-  background-color: rgba(0, 0, 0, 0.1);
 }
