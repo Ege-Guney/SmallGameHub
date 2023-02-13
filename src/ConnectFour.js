@@ -21,26 +21,26 @@ const ConnectFour = () => {
     let updatedBoard = [...board];
     for (let row = 5; row >= 0; row--) {
       if (updatedBoard[row][col] === 0) {
-        /*for (let i = 0; i < row; i++) {
+        for (let i = 0; i < row; i++) {
           setTimeout(() => {
-            const tds = document.querySelector(`tr[key="${i}"] td`);
-            let td = null;
-            console.log(tds.length);
-            for (let i = 0; i < tds.length; i++) {
-              if (tds[i].getAttribute("data-column") === col.toString()) {
-                td = tds[i];
-                break;
-              }
-            }
+            const tds = document.querySelectorAll("td");
 
-            if (td) {
-              td.style.backgroundColor = "yellow";
-              setTimeout(() => {
-                td.style.backgroundColor = "";
-              }, 30);
-            }
-          }, 30);
-        }*/
+            tds.forEach((item) => {
+              // eslint-disable-next-line
+              if (item.className == col) {
+                console.log("This column is " + col);
+                if (turn === 2) {
+                  item.style.backgroundColor = "gold";
+                } else {
+                  item.style.backgroundColor = "red";
+                }
+                setTimeout(() => {
+                  item.style.backgroundColor = "";
+                }, 100);
+              }
+            });
+          }, 80);
+        }
 
         updatedBoard[row][col] = turn;
         setBoard(updatedBoard);
@@ -153,6 +153,7 @@ const ConnectFour = () => {
                 <td
                   style={{ backgroundColor: "white" }}
                   key={index}
+                  className={index}
                   onClick={() => handleClick(index)}
                 >
                   {cell === 0 ? (
