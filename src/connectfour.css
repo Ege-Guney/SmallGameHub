@@ -5,6 +5,7 @@
 }
 
 table {
+  margin-top: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
   border-collapse: separate;
@@ -56,6 +57,10 @@ td.yellow {
   left: 50%;
 
   display: inline-block;
+  -webkit-box-shadow: inset 5px 5px 15px -3px #9a0f0f, 5px 5px 15px -3px #9a0f0f,
+    5px 5px 15px -3px #9a0f0f;
+  box-shadow: inset 5px 5px 15px -3px #9a0f0f, 5px 5px 15px -3px #9a0f0f,
+    5px 5px 15px -3px #9a0f0f;
 }
 
 .yellow-donut {
@@ -66,12 +71,15 @@ td.yellow {
   padding: 5px;
   border: 10px solid gold;
   display: inline-block;
-
+  color: transparent;
   top: 50%;
   left: 50%;
+  -webkit-box-shadow: inset 5px 5px 15px -3px #9a910f, 5px 5px 15px -3px #9a910f,
+    5px 5px 15px -3px #9a910f;
+  box-shadow: inset 5px 5px 15px -3px #9a910f, 5px 5px 15px -3px #9a910f,
+    5px 5px 15px -3px #9a910f;
 }
 th {
-  background-color: #fff;
   color: #000;
   font-weight: bold;
   padding: 10px;
