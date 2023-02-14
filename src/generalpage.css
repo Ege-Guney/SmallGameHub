@@ -4,41 +4,72 @@ header {
   text-align: center;
   font-size: xx-large;
   font-family: "Courier New", Courier, monospace;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 nav {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   padding: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: grey;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  width: 90%;
+  padding: 0px;
+  justify-content: center;
 }
 
 nav li {
   margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
 }
 
 .all_links {
   position: relative;
   height: 100%;
+  width: auto;
 }
 
 .one_link {
   color: #2da1c1;
-  font-size: small;
-  justify-content: center;
-  text-decoration: none;
-  right: 0;
+  font-size: large;
+  object-fit: cover;
   padding: 1.3em;
   background-color: aliceblue;
   border-radius: 15px;
   border: 3px black solid;
 }
+.image {
+  mix-blend-mode: color-burn;
+  display: inline-block;
+}
 
 .one_link:hover {
   color: #f90;
   text-decoration: underline;
+}
+
+#tictactoe {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/806/806131.png");
+  background-size: cover;
+}
+#rockpaperscissors {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/6793/6793733.png");
+  background-size: cover;
+}
+#hangman {
+  background-image: url("https://static.thenounproject.com/png/3534882-200.png");
+  background-size: cover;
+}
+#connectfour {
+  background-image: url("https://static.thenounproject.com/png/1579985-200.png");
+  background-size: cover;
 }

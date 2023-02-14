@@ -15,24 +15,20 @@ const GeneralPage = () => {
       <nav>
         <ul class="all_links">
           <li>
-            <Link class="one_link" to="/tictactoe">
-              Tic Tac Toe
-            </Link>
+            <Link id="tictactoe" class="one_link" to="/tictactoe"></Link>
           </li>
           <li>
-            <Link class="one_link" to="/rockpaperscissors">
-              Rock Paper Scissors
-            </Link>
+            <Link
+              id="rockpaperscissors"
+              class="one_link"
+              to="/rockpaperscissors"
+            ></Link>
           </li>
           <li>
-            <Link class="one_link" to="/hangman">
-              Hangman
-            </Link>
+            <Link id="hangman" class="one_link" to="/hangman"></Link>
           </li>
           <li>
-            <Link class="one_link" to="/connectfour">
-              ConnectFour
-            </Link>
+            <Link id="connectfour" class="one_link" to="/connectfour"></Link>
           </li>
         </ul>
       </nav>
