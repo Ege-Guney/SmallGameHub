@@ -30,16 +30,17 @@ const ConnectFour = () => {
               if (item.className == col) {
                 console.log("This column is " + col);
                 if (turn === 2) {
-                  item.style.backgroundColor = "gold";
+                  item.style.border = "3px gold solid";
                 } else {
-                  item.style.backgroundColor = "red";
+                  item.style.border = "3px red solid";
                 }
                 setTimeout(() => {
                   item.style.backgroundColor = "";
-                }, 100);
+                  item.style.border = "1px solid rgba(0, 0, 0, 0.15)";
+                }, 200);
               }
             });
-          }, 80);
+          }, 10);
         }
 
         updatedBoard[row][col] = turn;

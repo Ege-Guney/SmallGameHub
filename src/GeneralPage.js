@@ -10,7 +10,7 @@ const GeneralPage = () => {
   return (
     <Router>
       <header>
-        <h1>GAMES HUB</h1>
+        <h1 class="animate-charcter">GAMES HUB</h1>
       </header>
       <nav>
         <ul class="all_links">
